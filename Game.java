@@ -13,18 +13,15 @@ public class Game {
     private Scanner scanner;
     private int roundCount = 0; // Track number of rounds played
 
-    /**
-     * Constructs a Game with two players and initializes input scanner.
-     * The actual players will be initialized in the startGame method.
-     */
+    
+     //Constructs a Game with two players and initializes input scanner.
     public Game() {
         this.isGameOver = false;
         this.scanner = new Scanner(System.in);
     }
 
-    /**
-     * Starts the WAR card game by initializing players and distributing cards.
-     */
+    
+     // Starts the WAR card game by initializing players and distributing cards.
     public void startGame() {
         System.out.println("Welcome to the WAR card game!");
 
@@ -46,15 +43,13 @@ public class Game {
         scanner.close();
     }
 
-    /**
-     * Plays a single round of WAR.
-     */
+    // Plays a single round of WAR. Tracks Round for a method
     private void playRound() {
     roundCount++;
 
     boolean doubleOrNothing = false;
 
-    // Ask Double or Nothing BEFORE drawing cards
+    // Ask Double or Nothing method
     if (roundCount % 8 == 0) {
         System.out.print("Round " + roundCount + ": Double or Nothing? (yes/no): ");
         String response = scanner.nextLine().trim().toLowerCase();
@@ -66,7 +61,7 @@ public class Game {
         }
     }
 
-    // Wait for the player to hit enter to start the round (just for prompt)
+    // Wait for the player to hit enter to start the round
     System.out.println("\nPress Enter to play the round...");
     scanner.nextLine();
 
@@ -90,7 +85,7 @@ public class Game {
 
     Random rand = new Random();
 
-    // Apply power-up effect if needed
+    // Apply power-up effect if during accurate round
     if (card1.isPowerUp()) {
         int boost = rand.nextInt(20) + 1; // Random boost 1–20
         value1 += boost;
@@ -127,9 +122,8 @@ public class Game {
     }
 
     
-        /**
-     * Transfers up to 2 extra cards from the loser's deck to the winner's deck.
-     */
+    
+    //Transfers up to 2 extra cards from the loser's deck to the winner's deck.
     private void transferExtraCards(Player winner, Player loser) {
     for (int i = 0; i < 2; i++) {
         Card extraCard = loser.playCard();
@@ -145,9 +139,8 @@ public class Game {
 
 
 
-    /**
-     * Plays a standard one-card round of WAR.
-     */
+    
+    //Plays a standard one-card round of WAR.
     private void playNormalRound() {
         Card card1 = player1.playCard();
         Card card2 = player2.playCard();
@@ -171,9 +164,8 @@ public class Game {
         }
         }
 
-    /**
-     * Plays a special two-card round of WAR.
-     */
+
+     //Plays a special two-card round of WAR.
     private void playSpecialRound() {
         Card card1a = player1.playCard();
         Card card1b = player1.playCard();
@@ -201,9 +193,8 @@ public class Game {
         }
     }
 
-    /**
-     * Applies power-up logic and returns the modified card value.
-     */
+    
+     //Applies power-up logic and returns the modified card value.
     private int getCardValue(Card card, String playerName) {
         int baseValue = card.getValue();
         if (card.isPowerUp()) {
@@ -214,9 +205,8 @@ public class Game {
         return baseValue;
     }
 
-    /**
-     * Checks if the game is over and announces the winner.
-     */
+    
+     // Checks if the game is over and announces the winner.
     private void checkGameOver() {
         if (player1.getDeckSize() == 0 || player2.getDeckSize() == 0) {
             isGameOver = true;
