@@ -2,11 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-/**
- * The Deck class represents a standard 52-card deck used in the WAR card game.
- * It can be shuffled and dealt to players.
- * Some cards may be special power-up cards.
- */
+ //The Deck class represents a standard 52-card deck used in the WAR card game.
 public class Deck {
 
     private ArrayList<Card> cards;
@@ -34,9 +30,7 @@ public class Deck {
         addPowerUpCards();
     }
 
-    /**
-     * Adds 2-4 random power-up cards to the deck.
-     */
+     //Adds 2-4 random power-up cards to the deck.
     private void addPowerUpCards() {
         Random rand = new Random();
         int powerUpCount = rand.nextInt(3) + 2; // 2 to 4 power-up cards
@@ -50,18 +44,13 @@ public class Deck {
         }
     }
 
-    /**
-     * Shuffles the deck randomly.
-     */
+    //Shuffles the deck randomly.
     public void shuffle() {
         Collections.shuffle(cards);
     }
 
-    /**
-     * Deals half the deck (26 cards) for a two-player WAR game.
-     *
-     * @return an ArrayList containing half the deck
-     */
+    
+ //Deals half the deck (26 cards) for a two-player WAR game.
     public ArrayList<Card> dealHalf() {
         ArrayList<Card> halfDeck = new ArrayList<>();
         for (int i = 0; i < 26 && !cards.isEmpty(); i++) {
