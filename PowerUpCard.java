@@ -1,5 +1,6 @@
-// Derived class: PowerUpCard
+// The PowerUpCard class extends the Card class to add a power-up feature
 public class PowerUpCard extends Card {
+
     private boolean isPowerUp;
 
     // Constructor for a PowerUpCard
@@ -23,15 +24,16 @@ public class PowerUpCard extends Card {
     // Optional: Override compareTo for specific behavior for PowerUp cards
     @Override
     public int compareTo(Card other) {
-        int valueComparison = super.compareTo(other);
+        int valueComparison = super.compareTo(other); // Use Card's compareTo method
         if (valueComparison != 0) {
             return valueComparison;
         }
+        // Power-up cards are considered "greater" than regular cards when values are equal
         if (this.isPowerUp() && !(other instanceof PowerUpCard)) {
-            return 1;  // Power-up cards are considered "greater" than regular cards
+            return 1;
         }
         if (!(this.isPowerUp()) && (other instanceof PowerUpCard)) {
-            return -1;  // Regular cards are considered "lesser" than power-up cards
+            return -1;
         }
         return 0;
     }

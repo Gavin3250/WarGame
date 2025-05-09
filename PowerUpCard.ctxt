@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PowerUpCard
+comment1.params=suit\ rank\ value\ isPowerUp
+comment1.target=PowerUpCard(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=boolean\ isPowerUp()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=other
+comment4.target=int\ compareTo(Card)
+numComments=5
