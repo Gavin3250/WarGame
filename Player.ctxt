@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ The\ Player\ class\ represents\ a\ player\ in\ the\ WAR\ card\ game.\r\n\ Each\ player\ has\ a\ name\ and\ a\ personal\ deck\ of\ cards.\r\n
+comment1.params=name\ startingDeck
+comment1.target=Player(java.lang.String,\ java.util.ArrayList)
+comment1.text=\r\n\ Constructs\ a\ new\ Player\ with\ a\ name\ and\ a\ starting\ deck.\r\n\r\n\ @param\ name\ the\ player's\ name\r\n\ @param\ startingDeck\ the\ list\ of\ cards\ given\ to\ the\ player\ at\ the\ start\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Gets\ the\ player's\ name.\r\n\r\n\ @return\ the\ player's\ name\r\n
+comment3.params=
+comment3.target=Card\ playCard()
+comment3.text=\r\n\ Plays\ (removes)\ the\ top\ card\ from\ the\ player's\ deck.\r\n\r\n\ @return\ the\ card\ played,\ or\ null\ if\ no\ cards\ are\ left\r\n
+comment4.params=card1\ card2
+comment4.target=void\ addCards(Card,\ Card)
+comment4.text=\r\n\ Adds\ won\ cards\ to\ the\ bottom\ of\ the\ player's\ deck.\r\n\ The\ cards\ are\ added\ in\ a\ shuffled\ order\ to\ simulate\ randomness.\r\n\r\n\ @param\ card1\ the\ first\ card\ won\r\n\ @param\ card2\ the\ second\ card\ won\r\n
+comment5.params=card
+comment5.target=void\ addCards(Card)
+comment5.text=\r\n\ Adds\ a\ single\ card\ to\ the\ bottom\ of\ the\ player's\ deck.\r\n\r\n\ @param\ card\ the\ card\ to\ add\r\n
+comment6.params=
+comment6.target=int\ getDeckSize()
+comment6.text=\r\n\ Gets\ the\ number\ of\ cards\ left\ in\ the\ player's\ deck.\r\n\r\n\ @return\ the\ size\ of\ the\ deck\r\n
+numComments=7

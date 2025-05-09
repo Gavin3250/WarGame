@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Card
+comment0.text=\r\n\ The\ Card\ class\ represents\ a\ standard\ playing\ card\ with\ a\ suit\ and\ rank.\r\n\ It\ can\ be\ compared\ to\ other\ cards\ to\ determine\ which\ one\ is\ stronger.\r\n\ Power-up\ cards\ provide\ a\ temporary\ boost\ during\ a\ round.\r\n
+comment1.params=suit\ rank\ value
+comment1.target=Card(java.lang.String,\ java.lang.String,\ int)
+comment1.text=\r\n\ Constructs\ a\ regular\ Card\ with\ a\ given\ suit,\ rank,\ and\ value.\r\n\r\n\ @param\ suit\ the\ suit\ of\ the\ card\ (e.g.,\ "Hearts")\r\n\ @param\ rank\ the\ rank\ of\ the\ card\ (e.g.,\ "King")\r\n\ @param\ value\ the\ numerical\ value\ of\ the\ card\ for\ comparison\r\n
+comment2.params=suit\ rank\ value\ isPowerUp
+comment2.target=Card(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment2.text=\r\n\ Constructs\ a\ Card\ with\ optional\ power-up\ ability.\r\n\r\n\ @param\ suit\ the\ suit\ or\ category\ of\ the\ card\r\n\ @param\ rank\ the\ rank\ or\ name\ of\ the\ card\r\n\ @param\ value\ the\ card's\ base\ value\r\n\ @param\ isPowerUp\ true\ if\ this\ is\ a\ power-up\ card\r\n
+comment3.params=
+comment3.target=java.lang.String\ getSuit()
+comment4.params=
+comment4.target=java.lang.String\ getRank()
+comment5.params=
+comment5.target=int\ getValue()
+comment6.params=
+comment6.target=boolean\ isPowerUp()
+comment7.params=other
+comment7.target=int\ compareTo(Card)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

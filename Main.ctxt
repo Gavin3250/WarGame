@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\r\n\ The\ Main\ class\ starts\ the\ WAR\ card\ game.\r\n\ It\ creates\ a\ Game\ instance\ and\ begins\ play.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

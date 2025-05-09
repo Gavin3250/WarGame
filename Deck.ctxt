@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Deck
+comment0.text=\r\n\ The\ Deck\ class\ represents\ a\ standard\ 52-card\ deck\ used\ in\ the\ WAR\ card\ game.\r\n\ It\ can\ be\ shuffled\ and\ dealt\ to\ players.\r\n\ Some\ cards\ may\ be\ special\ power-up\ cards.\r\n
+comment1.params=
+comment1.target=Deck()
+comment1.text=\r\n\ Constructs\ a\ new,\ unshuffled\ deck\ of\ 52\ standard\ playing\ cards.\r\n\ Also\ randomly\ inserts\ a\ few\ power-up\ cards.\r\n
+comment2.params=
+comment2.target=void\ addPowerUpCards()
+comment2.text=\r\n\ Adds\ 2-4\ random\ power-up\ cards\ to\ the\ deck.\r\n
+comment3.params=
+comment3.target=void\ shuffle()
+comment3.text=\r\n\ Shuffles\ the\ deck\ randomly.\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ dealHalf()
+comment4.text=\r\n\ Deals\ half\ the\ deck\ (26\ cards)\ for\ a\ two-player\ WAR\ game.\r\n\r\n\ @return\ an\ ArrayList\ containing\ half\ the\ deck\r\n
+numComments=5
