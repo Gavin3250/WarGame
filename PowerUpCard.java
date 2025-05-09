@@ -20,15 +20,14 @@ public class PowerUpCard extends Card {
         }
         return super.toString();
     }
-
-    // Optional: Override compareTo for specific behavior for PowerUp cards
+    
     @Override
     public int compareTo(Card other) {
         int valueComparison = super.compareTo(other); // Use Card's compareTo method
         if (valueComparison != 0) {
             return valueComparison;
         }
-        // Power-up cards are considered "greater" than regular cards when values are equal
+        // Power-up cards best regular cards when values are equal
         if (this.isPowerUp() && !(other instanceof PowerUpCard)) {
             return 1;
         }
