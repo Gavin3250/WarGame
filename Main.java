@@ -1,7 +1,5 @@
-/**
- * The Main class starts the WAR card game.
- * It creates a Game instance and begins play.
- */
+
+ //The Main class starts the game.
 public class Main {
     public static void main(String[] args) {
         Game game = new Game();
